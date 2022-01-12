@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Budjet app</title>
+</head>
+<body>
+    <div class = 'app'>
+        <h1>Expense Tracker</h1>
+        <div class = 'balence-container' >
+            <h2>Your Balence</h2>
+            <div id = 'balence'>
+                $1000
+            </div>
+        </div>
+        <div class="cash-flow">
+            <div class="income-container">
+                <h2>Income</h2>
+                <div id = 'income'>$1200</div>
+            </div>
+            <div class="expence-container">
+                <h2>Expense</h2>
+                <div id = 'expence'>$1200</div>
+            </div>
+        </div>
+        <div class="transactions-container">
+            <h2>Transactions</h2>
+            <ul id="transaction">
+
+            </ul>
+        </div>
+        <div class = 'form-container'>
+            <h2>Add new transaction</h2>
+            <form onsubmit="return false">
+                <label for="name">Name</label>
+                <input id="name" type="text"></input>
+                <label for="amount">Amount</label>
+                <input id="amount" type="number"></input>
+                <button id="income-btn">Add Income</button>
+                <button id="expence-btn">Add expense</button>
+            </form>
+        </div>
+    </div>
+    <h3>File Names: Adi_2022,Adi_outside</h3>
+    <script src="script.js"></script>
+
+</body>
+</html>

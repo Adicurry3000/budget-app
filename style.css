@@ -1,0 +1,161 @@
+:root{
+    --drop-shadow:0px 1px 4px 1px rgba(199,199,199,1);
+    --income: green;
+    --expence:red;
+}
+
+
+body{
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.balence-container #balence{
+    font-size: 1.5em;
+
+}
+
+h2{
+    font-size: 1.3em;
+    text-transform: uppercase;
+
+}
+
+h3{
+    font-size: 1em;
+    margin:0;
+    margin-top: 2px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container{
+    margin-top: 40px;
+}
+
+.cash-flow{
+    display:flex;
+    box-shadow:var(--drop-shadow);
+    align-items: center;
+    justify-content: center;
+    padding-bottom:20px;
+    padding-top:20px;
+    margin-top:20px;
+}
+
+.income-container{
+    border-right: 1px solid #cccccc;
+    padding-right: 20px;
+
+}
+
+.expence-container{
+    padding-left: 20px;
+}
+
+#income, #expence{
+    font-size:1.3em;
+
+}
+
+#income{
+    color: var(--income)
+}
+
+#expence{
+    color: var(--expence)
+}
+
+#transaction{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.transactions-container{
+    margin-top: 40px;
+}
+
+#transaction li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 7px;
+    margin-bottom: 10px;
+    box-shadow: var(--drop-shadow);
+
+}
+
+#transaction li .income-amt{
+    background-color:var(--income);
+    display:inline-block;
+    padding: 3px;
+    border-radius:3px;
+    color:white;
+    margin-right: 5px;
+
+}
+
+
+#transaction li .expence-amt{
+    background-color:var(--expence);
+    display:inline-block;
+    padding: 3px;
+    border-radius:3px;
+    color:white;
+    margin-right: 5px;
+}
+
+#transaction li button{
+    padding-top: 6px;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction:column;
+
+}
+
+.form-container form label{
+    padding-bottom: 10px;
+    font-size:1.2em;
+    font-weight: bold;
+
+}
+
+.form-container form input{
+    height:25px;
+    margin-bottom: 10px
+}
+
+.form-container form button{
+    border:none;
+    padding:10px;
+    margin-bottom:10px;
+    font-size:1em;
+    text-transform:uppercase;
+}
+
+#income-btn{
+    background-color:var(--income);
+    color:white;
+}
+
+
+#expence-btn{
+    background-color:var(--expence);
+    color:white;
+}
